@@ -27,14 +27,6 @@ while (nodename != "ZZZ") {
 
 console.log("part a:", steps)
 
-/*
-
-8 16 24 32 40 48
-4 8 16
-
-*/
-
-// 14.631.604.759.649
 // for each starting node, check after how many steps we reach a node
 // ending with "Z"
 steps = 0, instrIndex = 0
