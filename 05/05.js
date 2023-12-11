@@ -54,3 +54,21 @@ function lookupRanges(index, ranges) {
   }
   return lookupRanges(index+1, newRanges)
 }
+
+// matchRange returns an array of range objects, specifying which
+// parts of r1 match r2. A range consists of a start and size property.
+// The returned ranges also specify a match attribute, set to true or false
+// respectively.
+function matchRange(r1, r2) {
+  // r1 is the input range we try to match against r2
+
+  // r1 .$$$...... or ......$$$.
+  // r2 ......$$$.    .$$$......
+  if (r2.start > r1.start+r1.size-1 || r1.start > r2.start+r2.size-1) {
+    return [
+      {
+        
+      }
+    ]
+  }
+}
